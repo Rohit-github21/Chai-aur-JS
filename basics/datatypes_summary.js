@@ -25,4 +25,31 @@ const myFunction = function(){
 }
 
 console.log(typeof bigNumber);
-console.log(typeof anotherId);
+console.log(typeof anotherId)
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) call by value
+// Heap(Non-Primitive) call by referance
+// datatypes are based on memory allocation
+
+
+let test = "RohitYadav"
+let anothername = "test"
+anothername = "rohit code"
+
+console.log(test);
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@paytm"
+}
+
+let userTwo = userOne
+
+userTwo.email = "rohit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
